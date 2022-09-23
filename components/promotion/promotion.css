@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "happyMonkey";
+    src: url("../../font/HappyMonkey.ttf");
+}
+:root{
+    --blue-color: #A2D2FF;
+    --red-color: #efb0c9;
+    --white-color: whitesmoke;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:var(--white-color);
+    font-family: "happyMonkey", sans-serif;
+}
+
+.promo{
+    width: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background:  linear-gradient(to bottom, var(--blue-color) , var(--red-color) );
+
+}
+.landing{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    margin-top: 40px;
+    font-size: 40px;
+}
+h1,h2,h3{
+    text-shadow: 0px 0px 2px #000;
+}
+.landing img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    background:  rgb(180, 219, 241);
+    border: 8px solid var(--red-color);
+    border-radius: 50%;
+    margin: 40px 0;
+}
+.landing h2{
+    text-align: center;
+    background:  var(--red-color);
+    padding: 20px;
+    margin: 20px 0;
+    display: inline;
+}
+.landing h3{
+    display: inline;
+    background:  var(--red-color);
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+}
+.views{
+    height: 100vh;
+}
+.views p{
+    color: var(--white-color);
+}
+.gift-wrapper{
+    width: 700px;
+    height: 80vh;
+    margin: 40px;
+    position: relative;
+    border: 7px solid var(--white-color);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.gift-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.gift-img:hover{
+    display: none;
+}
+.main-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    font-size: 20px;
+    padding: 30px;
+
+}
+footer p{
+    color: gray;
+    font-weight: bold;
+    text-shadow: 0 0 2px #e6d8de;
+}
+footer span{
+    display: block;
+    text-decoration: underline;
+    font-style: italic;
+    padding: 5px 0 ;
+    text-shadow: 0 0 2px #000;
+}

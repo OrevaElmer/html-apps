@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'orbitron';
+    src: url("../../font/orbitron.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #4899db;
+}
+.space{
+    background-image: url("../../img/universe2.gif");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'orbitron', sans-serif;
+    text-align: center;
+}
+.space-wrapper{
+    min-width: 40%;
+}
+.space-wrapper img{
+    width: 250px;
+}
+.space-wrapper h1{
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, .6);
+}
+.space-wrapper span{
+    border-bottom: 4px solid whitesmoke;
+    color: orange;
+}
+.space-wrapper button{
+    font-family: inherit;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 40px;
+    
+}
+.back-to-home{
+    text-decoration: none;
+    cursor: pointer;
+    color: orangered;
+    margin-top: 0px;
+}
+footer{
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+footer div{
+    background-color: whitesmoke;
+    opacity: 0.5;
+    min-height: 60px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+footer p{
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    color: rgb(243, 166, 138);
+}
