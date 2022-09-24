@@ -101,4 +101,13 @@ span:nth-child(7){
     color: orangered;
     border-bottom: 2px dotted #ccc;
 }
-/* end of home page */
+
+@media (max-width:425px) {
+    h1 {
+        font-size: 70px;
+    }
+    .search-input {
+        width: 90%;
+        margin: 10px 0; 
+    }
+}
