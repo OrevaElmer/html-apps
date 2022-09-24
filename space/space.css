@@ -45,7 +45,6 @@
     font-size: 20px;
     cursor: pointer;
     margin-top: 40px;
-    
 }
 .back-to-home{
     text-decoration: none;
@@ -75,4 +74,23 @@ footer p{
     right: 0;
     height: 40px;
     color: rgb(243, 166, 138);
+}
+
+@media (max-width:425px) {
+    .space-wrapper img {
+        width: 150px;
+        margin: 50px 0;
+    }
+    .space-wrapper h1{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    .space-wrapper button{
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    
 }
