@@ -1,104 +1,96 @@
-/* home page */
-:root{
-    --tile-size: 112px;
-    --color-blue: rgb(110, 110, 207);
-    --color-red: rgb(250, 109, 58);
-    --color-yellow: rgb(253, 186, 62);
-    --color-green: rgb(85, 131, 85);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.wrapper{
+h1{
+    font-size: 40px;
+    margin: 10px 0;
+    color: rgb(90, 89, 89);
+}
+body{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    background: pink;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.search-input{
-    width: 561px;
-    line-height: 44px;
-    border-radius: 40px;
-    border: 1px solid #ccc;
-    padding-left: 20px;
-    outline: none;
-    font-size: 17px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-}
-
-h1{
-    font-size: 80px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-span{
-    margin-left: -16px;
-}
-span:nth-child(1){
-    color: var(--color-blue);
-}
-span:nth-child(2){
-    color: var(--color-red);
-}
-span:nth-child(3){
-    color: var(--color-yellow);
-}
-span:nth-child(4){
-    color: var(--color-blue);
-}
-span:nth-child(5){
-    color: var(--color-green);
-}
-span:nth-child(6){
-    color: var(--color-yellow);
-}
-span:nth-child(7){
-    color: var(--color-red);
-}
-.addShortcut{
-    border-radius: 6px;
-    width: var(--tile-size);
-    margin-top: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 10px;
-    display: flex;
     flex-direction: column;
+}
+.project-list{
+    margin: 20px 40px;
+    display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project{
+    border: 4px solid rgb(250, 141, 141);
+    height: 30vh;
+    width: 20%;
+    border-radius: 10px;
+    margin: 20px 40px;
+    position: relative;
+}
+.project{
+    background-color: #fff;
+    overflow: hidden;
+}
+.project:hover::before{
+    background-color:rgb(250, 141, 141);
+    color: #fff;
+    padding: 10px;
+    z-index: 9;
+    position: absolute;
+    border-bottom-right-radius: 5px;
+}
+#browser-app:hover::before{
+    content: "Browser app";
+}
+#promotion-app:hover::before{
+    content: "Promotion app";
+}
+#card-app:hover::before{
+    content: "My card app";
+}
+#delta-app:hover::before{
+    content: "History app";
+}
+#space-app:hover::before{
+    content: "Space app";
+}
+.project img{
+    width: 100%;
+    height: 100%;
     cursor: pointer;
 }
-.addShortcut:hover{
-    background: rgba(241, 243, 244, 1);
+.project img:hover{
+    animation: move 1s ease-in-out forwards reverse;
 }
-.tile-icon{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(240, 239, 239);
-    border-radius: 50%;
-    font-size: 25px;
-    color: rgb(85, 85, 85);
-    margin-bottom: 10px;
+@keyframes move {
+    100%{
+        transform: translateY(40px);
+    }
 }
-.tile-title{
-    font-weight: 300;
-    font-size: 15px;
-    color: rgb(85, 85, 85);
+@media (max-width:768px) {
+    .project-list {
+        margin: 20px 10px;
+    }
+    .project {
+        width: 40%;
+        height: 40vh;
+        margin: 20px;
+    }    
 }
-.link-wrapper{
-    color: rgb(85, 85, 85);
-    font-size: 12px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+@media (max-width:425px) {
+    .project-list {
+        margin: 20px 10px;
+    }
+    .project {
+        width: 100%;
+        height: 35vh;
+    }    
 }
-.card-link{
-    font-weight: bold;
-    text-decoration: none;
-    color: orangered;
-    border-bottom: 2px dotted #ccc;
-}
-/* end of home page */
